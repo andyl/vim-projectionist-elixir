@@ -1,10 +1,10 @@
 {
-  "lib/**/*.ex": {
+  "lib/*.ex": {
     "type":      "src",
-    "alternate": "test/{dirname}/{basename}_test.exs"
+    "alternate": "test/{}_test.exs"
   },
-  "test/**/*_test.exs": {
+  "test/*_test.exs": {
     "type":      "test",
-    "alternate": "lib/{dirname}/{basename}.ex"
+    "alternate": "lib/{}.ex"
   }
 }
