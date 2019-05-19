@@ -1,6 +1,6 @@
 # vim-projectionist-elixir
 
-Vim file navigation for Elixir projects [online source][l1]
+Vim file navigation for Elixir projects 
 
 This plugin supplies quick-nav links for Elixir projects.  It
 gives commands to jump between an Elixir source file and it's
@@ -15,7 +15,7 @@ To work with umbrella projects, you'll need to put a custom
 project.
 
 To quickly generate a `.projections.json` file for an umbrella
-project, see the [ex_projections][l2] project.
+project, see the [ex_projections][l1] project.
 
 Install using `Plug` in your `.vimrc`:
 
@@ -32,8 +32,7 @@ Main commands:
 
 `:AT` - open the 'alternate' file in another tab
 
-This work is based on Tim Pope's [vim-projectionist][l3] plugin.  
+This work is based on Tim Pope's [vim-projectionist][l2] plugin.  
 
-[l1]: https://github.com/andyl/vim-projectionist-elixir
-[l2]: https://github.com/andyl/ex_projections
-[l3]: https://github.com/tpope/vim-projectionist
+[l1]: https://github.com/andyl/ex_projections
+[l2]: https://github.com/tpope/vim-projectionist
