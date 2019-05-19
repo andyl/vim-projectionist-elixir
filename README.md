@@ -16,6 +16,9 @@ To work with umbrella projects, you'll need to put a custom
 `.projections.json` file in the root directory of your umbrella
 project.
 
+To quickly generate a `.projections.json` file for an umbrella
+project, see the [ex_projections][l3] project.
+
 Install using `Plug` in your `.vimrc`:
 
     Plug 'tpope/vim-projectionist'
@@ -35,3 +38,4 @@ This work is based on Tim Pope's [vim-projectionist][l2] plugin.
 
 [l1]: https://github.com/andyl/vim-projectionist-elixir
 [l2]: https://github.com/tpope/vim-projectionist
+[l3]: https://github.com/andyl/ex_projections
