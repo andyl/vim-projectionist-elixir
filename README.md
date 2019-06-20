@@ -34,7 +34,7 @@ See also:
 In Phoenix projects, you can jump between 'related' files (controllers /
 templates / views).
 
-There are two types of 'relatedness':
+There are two types of relations:
 1) one-to-one relationship, eg `controller -> view`
 2) one-to-many relationship, eg `controller => template`
 
