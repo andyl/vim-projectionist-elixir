@@ -21,13 +21,32 @@
     "type": "controller",
     "related": [
       "{dirname|dirname}/views/{basename}_view.ex"
+    ],
+    "template": [
+      "# {basename}_controller.ex",
+      "defmodule XXX do",
+      "end"
     ]
   },
   "*_view.ex": {
     "type": "view",
     "related": [
       "{dirname|dirname}/controllers/{basename}_controller.ex"
+    ],
+    "template": [
+      "# {basename}_view.ex",
+      "defmodule XXX do",
+      "end"
     ]
   },
-  "*eex": {"type": "template"}
+  "*eex": {
+    "type": "template",
+    "related": [
+      "{dirname|dirname|dirname}/controllers/{dirname|basename}_controller.ex",
+      "{dirname|dirname|dirname}/views/{dirname|basename}_view.ex"
+    ],
+    "template": [
+      "<%# {basename} eex template %>"
+    ]
+  }
 }

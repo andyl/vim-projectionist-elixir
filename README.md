@@ -20,9 +20,16 @@ project, see the [ex_projections][l1] project.
 Install using `Plug` in your `.vimrc`:
 
     Plug 'tpope/vim-projectionist'
+    Plug 'c-brenn/fuzzy-projectionist.vim'
     Plug 'andyl/vim-projectionist-elixir'
 
-Main commands:
+See also:
+- Tim Pope's [vim-projectionist][l2] plugin.  
+- Conor Brennan's [fuzzy-projectionist.vim][l3] plugin.
+
+## Alternate File Navigation
+
+'Alternates' are the source code and test file - a one-to-one relationship.
 
 `:A` - open the 'alternate' file
 
@@ -32,7 +39,24 @@ Main commands:
 
 `:AT` - open the 'alternate' file in another tab
 
-This work is based on Tim Pope's [vim-projectionist][l2] plugin.  
+## Related File Navigation
+
+In Phoenix projects, you can jump between 'related' files (controllers /
+templates / views).
+
+There are two types of 'relatedness':
+1) one-to-one relationship, eg `controller -> view`
+2) one-to-many relationship, eg `controller -> template`
+
+For one-to-one relationships, use the Projectionist `E` commands:
+
+- `:Econtroller`
+- `:Eview`
+
+For one-to-many relationships, use the Fuzzy-Projectionist `F` commands:
+
+- `:Ftemplate`
 
 [l1]: https://github.com/andyl/ex_projections
 [l2]: https://github.com/tpope/vim-projectionist
+[l3]: https://github.com/c-brenn/fuzzy-projectionist.vim
