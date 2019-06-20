@@ -2,20 +2,10 @@
 
 Vim file navigation for Elixir projects 
 
-This plugin supplies quick-nav links for Elixir projects.  It
-gives commands to jump between an Elixir source file and it's
-associated test.
-
-This plugin is going to work with `mix` projects where source
-files are stored under the `lib` directory and corresponding test
-files are stored under `test`.  
-
-To work with umbrella projects, you'll need to put a custom
-`.projections.json` file in the root directory of your umbrella
-project.
-
-To quickly generate a `.projections.json` file for an umbrella
-project, see the [ex_projections][l1] project.
+This plugin supplies quick-nav links for Elixir projects.  **Alternate File
+Navigation** gives commands to jump between an Elixir source file and it's
+associated test.  **Related File Navigation** gives commands to jump between
+Phoenix controllers, views and templates.
 
 Install using `Plug` in your `.vimrc`:
 
@@ -46,7 +36,7 @@ templates / views).
 
 There are two types of 'relatedness':
 1) one-to-one relationship, eg `controller -> view`
-2) one-to-many relationship, eg `controller -> template`
+2) one-to-many relationship, eg `controller => template`
 
 For one-to-one relationships, use the Projectionist `E` commands:
 
@@ -56,6 +46,19 @@ For one-to-one relationships, use the Projectionist `E` commands:
 For one-to-many relationships, use the Fuzzy-Projectionist `F` commands:
 
 - `:Ftemplate`
+
+## Working with Umbrella Projects
+
+This plugin is going to work with `mix` projects where source
+files are stored under the `lib` directory and corresponding test
+files are stored under `test`.  
+
+To work with umbrella projects, you'll need to put a custom
+`.projections.json` file in the root directory of your umbrella
+project.
+
+To quickly generate a `.projections.json` file for an umbrella
+project, see the [ex_projections][l1] project.
 
 [l1]: https://github.com/andyl/ex_projections
 [l2]: https://github.com/tpope/vim-projectionist
