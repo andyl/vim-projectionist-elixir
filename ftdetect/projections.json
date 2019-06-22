@@ -28,10 +28,22 @@
       "end"
     ]
   },
+  "*_live.ex": {
+    "type": "live",
+    "related": [
+      "{dirname|dirname}/views/{basename}_view.ex"
+    ],
+    "template": [
+      "# {basename}_live.ex",
+      "defmodule XXX do",
+      "end"
+    ]
+  },
   "*_view.ex": {
     "type": "view",
     "related": [
-      "{dirname|dirname}/controllers/{basename}_controller.ex"
+      "{dirname|dirname}/controllers/{basename}_controller.ex",
+      "{dirname|dirname}/live/{basename}_live.ex"
     ],
     "template": [
       "# {basename}_view.ex",
@@ -43,6 +55,7 @@
     "type": "template",
     "related": [
       "{dirname|dirname|dirname}/controllers/{dirname|basename}_controller.ex",
+      "{dirname|dirname|dirname}/live/{dirname|basename}_live.ex",
       "{dirname|dirname|dirname}/views/{dirname|basename}_view.ex"
     ],
     "template": [
