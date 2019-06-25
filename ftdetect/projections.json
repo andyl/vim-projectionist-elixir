@@ -3,8 +3,8 @@
     "type":      "src",
     "alternate": "test/{}_test.exs",
     "template": [
-      "# test/{}_test.exs",
-      "defmodule XXX do", 
+      "# lib/{}.ex",
+      "defmodule XXX do",
       "end"
     ]
   },
@@ -12,8 +12,8 @@
     "type":      "test",
     "alternate": "lib/{}.ex",
     "template": [
-      "# lib/{}.ex",
-      "defmodule XXX do",
+      "# test/{}_test.exs",
+      "defmodule XXX do", 
       "end"
     ]
   },
