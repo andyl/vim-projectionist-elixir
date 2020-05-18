@@ -86,12 +86,26 @@
   },
   "*_live.ex": {
     "type": "live",
+    "alternate": "test/{dirname}/live/{basename}_live_test.exs",
     "related": [
       "{dirname|dirname}/views/{basename}_view.ex"
     ],
     "template": [
-      "defmodule {dirname|camelcase|capitalize}.{basename|camelcase|capitalize}Live do",
-      "  use {dirname|camelcase|capitalize}, :view",
+      "defmodule Web.{basename|camelcase|capitalize}Live do",
+      "  use Phoenix.LiveView",
+      "  def render(assigns) do",
+      "    ~L\"\"\"",
+      "    <div class=\"\">",
+      "      <div>",
+      "        <%= @deploy_step %>",
+      "      </div>",
+      "    </div>",
+      "    \"\"\"",
+      "  end",
+      "",
+      "  def mount(_session, socket) do",
+      "    {:ok, assign(socket, deploy_step: \"Ready!\")}",
+      "  end",
       "end"
     ]
   },
