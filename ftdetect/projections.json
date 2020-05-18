@@ -88,23 +88,22 @@
     "type": "live",
     "alternate": "test/{dirname}/live/{basename}_live_test.exs",
     "related": [
-      "{dirname|dirname}/views/{basename}_view.ex"
+      "{dirname|dirname|dirname}/live/{dirname|basename}_live.html.leex"
     ],
     "template": [
       "defmodule Web.{basename|camelcase|capitalize}Live do",
       "  use Phoenix.LiveView",
+      "",
       "  def render(assigns) do",
       "    ~L\"\"\"",
       "    <div class=\"\">",
-      "      <div>",
-      "        <%= @deploy_step %>",
-      "      </div>",
+      "      Hello from {basename}",
       "    </div>",
       "    \"\"\"",
       "  end",
       "",
       "  def mount(_session, socket) do",
-      "    {:ok, assign(socket, deploy_step: \"Ready!\")}",
+      "    {open}:ok, socket{close}",
       "  end",
       "end"
     ]
@@ -122,7 +121,6 @@
     "type": "template",
     "related": [
       "{dirname|dirname|dirname}/controllers/{dirname|basename}_controller.ex",
-      "{dirname|dirname|dirname}/live/{dirname|basename}_live.ex",
       "{dirname|dirname|dirname}/views/{dirname|basename}_view.ex"
     ],
     "template": [
@@ -133,8 +131,7 @@
     "type": "template",
     "related": [
       "{dirname|dirname|dirname}/controllers/{dirname|basename}_controller.ex",
-      "{dirname|dirname|dirname}/live/{dirname|basename}_live.ex",
-      "{dirname|dirname|dirname}/views/{dirname|basename}_view.ex"
+      "{dirname|dirname|dirname}/live/{dirname|basename}_live.ex"
     ],
     "template": [
       "<%# {basename} leex template %>"
