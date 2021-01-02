@@ -124,7 +124,7 @@
       "{dirname|dirname|dirname}/views/{dirname|basename}_view.ex"
     ],
     "template": [
-      "<%# {basename} eex template %>"
+      "<h1 style=\"color: #C7AA8D; font-size:3em;\">{basename}.eex template</h1>"
     ]
   },
   "*leex": {
@@ -134,7 +134,7 @@
       "{dirname|dirname|dirname}/live/{dirname|basename}_live.ex"
     ],
     "template": [
-      "<%# {basename} leex template %>"
+      "<h1 style=\"color: #C7AA8D; font-size:3em;\">{basename}.leex template</h1>"
     ]
   }
 }
