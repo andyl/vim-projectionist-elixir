@@ -11,7 +11,7 @@ Install using `Plug` in your `.vimrc`:
 
     Plug 'tpope/vim-projectionist'
     Plug 'c-brenn/fuzzy-projectionist.vim'
-    Plug 'andyl/vim-projectionist-elixir'
+    Plug 'dkuku/vim-projectionist-elixir'
 
 See also:
 - Tim Pope's [vim-projectionist][l2] plugin.  
