@@ -1,5 +1,4 @@
 # vim-projectionist-elixir
-this is a fork of [vim-projectionist-elixir][l4]
 
 Vim file navigation for Elixir projects 
 
@@ -12,13 +11,11 @@ Install using `Plug` in your `.vimrc`:
 
     Plug 'tpope/vim-projectionist'
     Plug 'c-brenn/fuzzy-projectionist.vim'
-    Plug 'dkuku/vim-projectionist-elixir'
+    Plug 'andyl/vim-projectionist-elixir'
 
 See also:
-- Andyl's [vim-projectionist-elixir][l4] plugin. It was the base for this project.
 - Tim Pope's [vim-projectionist][l2] plugin.  
 - Conor Brennan's [fuzzy-projectionist.vim][l3] plugin.
-
 
 ## Alternate File Navigation
 
@@ -63,7 +60,6 @@ project.
 To quickly generate a `.projections.json` file for an umbrella
 project, see the [ex_projections][l1] project.
 
-[l1]: https://github.com/dkuku/ex_projections
+[l1]: https://github.com/andyl/ex_projections
 [l2]: https://github.com/tpope/vim-projectionist
 [l3]: https://github.com/c-brenn/fuzzy-projectionist.vim
-[l4]: https://github.com/andyl/vim-projectionist-elixir
