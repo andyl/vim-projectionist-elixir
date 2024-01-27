@@ -14,6 +14,15 @@
     "template": [
       "# test/{}_test.exs",
       "defmodule XXX do", 
+      " ", 
+      "  use ExUnit.Case", 
+      " ", 
+      "  describe \"#myfunc/1\" do", 
+      "    test \"description\" do",  
+      "      assert true",  
+      "    end", 
+      "  end", 
+      " ", 
       "end"
     ]
   },
