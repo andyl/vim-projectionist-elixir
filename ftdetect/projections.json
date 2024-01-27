@@ -17,6 +17,8 @@
       " ", 
       "  use ExUnit.Case", 
       " ", 
+      "  alias XXX", 
+      " ", 
       "  describe \"#myfunc/1\" do", 
       "    test \"description\" do",  
       "      assert true",  
